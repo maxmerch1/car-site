@@ -68,6 +68,67 @@ const GallerySection = () => {
       alt: 'Engine bay cleaning',
       category: 'Exterior',
     },
+    // New images from new-car-pics-forcursor folder
+    {
+      id: 10,
+      src: '/carpics/885DBAED-ED3C-4736-9882-C50C8749B0A7.JPG',
+      alt: 'Luxury car detailing showcase',
+      category: 'Complete Detail',
+    },
+    {
+      id: 11,
+      src: '/carpics/A207F9DA-BDE8-4696-9956-397A532F82FF.JPG',
+      alt: 'Professional car care results',
+      category: 'Exterior',
+    },
+    {
+      id: 12,
+      src: '/carpics/DFD82509-DDE3-4760-8950-91321AE55D1A.JPG',
+      alt: 'Premium detailing service',
+      category: 'Interior',
+    },
+    {
+      id: 13,
+      src: '/carpics/IMG_4479.jpeg',
+      alt: 'Car interior transformation',
+      category: 'Interior',
+    },
+    {
+      id: 14,
+      src: '/carpics/IMG_4619.jpeg',
+      alt: 'Exterior car detailing work',
+      category: 'Exterior',
+    },
+    {
+      id: 15,
+      src: '/carpics/IMG_4652.jpeg',
+      alt: 'Professional car cleaning',
+      category: 'Complete Detail',
+    },
+    {
+      id: 16,
+      src: '/carpics/IMG_4872.jpeg',
+      alt: 'Luxury car care results',
+      category: 'Exterior',
+    },
+    {
+      id: 17,
+      src: '/carpics/snapchat_0.5.PNG',
+      alt: 'Car detailing showcase',
+      category: 'Complete Detail',
+    },
+    {
+      id: 18,
+      src: '/carpics/Untitled design (2).PNG',
+      alt: 'Auto Dynamics branding',
+      category: 'Brand',
+    },
+    {
+      id: 19,
+      src: '/carpics/Untitled design.PNG',
+      alt: 'Professional car detailing',
+      category: 'Brand',
+    },
   ]
 
   const nextImage = () => {
