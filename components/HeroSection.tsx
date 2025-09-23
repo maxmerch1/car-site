@@ -6,79 +6,15 @@ import { ChevronDown, Star, Shield, Award } from 'lucide-react'
 const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Collage Background */}
+      {/* Single Background Image */}
       <div className="absolute inset-0 z-0">
-        {/* Grid of car detailing images */}
-        <div className="grid grid-cols-3 grid-rows-3 h-full w-full">
-          {/* Top row */}
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/hero-bg.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.1 }}
-          />
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/service-1.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          />
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175819.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-          />
-          
-          {/* Middle row */}
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175831.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          />
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175842.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-          />
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175852.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          />
-          
-          {/* Bottom row */}
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175901.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-          />
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175911.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          />
-          <motion.div 
-            className="bg-cover bg-center hover:scale-105 transition-transform duration-700"
-            style={{ backgroundImage: "url('/carpics/Screenshot 2025-09-23 175925.png')" }}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-          />
-        </div>
+        <motion.div
+          className="w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/carpics/hero-bg.png')" }}
+          initial={{ opacity: 0, scale: 1.1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: 'easeOut' }}
+        />
         
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-luxury-black/70" />
