@@ -87,7 +87,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20 sm:pt-24 lg:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -99,7 +99,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight"
           >
             <span className="text-white">Luxury Detailing,</span>
             <br />
@@ -111,7 +111,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl sm:text-2xl text-luxury-silver max-w-3xl mx-auto leading-relaxed"
+            className="text-lg sm:text-xl md:text-2xl text-luxury-silver max-w-3xl mx-auto leading-relaxed px-4"
           >
             Protect your investment and fall in love with your car again.
             <br />
@@ -146,12 +146,12 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 px-4"
           >
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(212, 175, 55, 0.4)' }}
               whileTap={{ scale: 0.95 }}
-              className="btn-luxury text-lg px-12 py-4 text-luxury-black font-bold"
+              className="btn-luxury text-base sm:text-lg px-8 sm:px-12 py-3 sm:py-4 text-luxury-black font-bold w-full sm:w-auto"
             >
               Book Your Detail Today
             </motion.button>
