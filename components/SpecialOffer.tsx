@@ -35,7 +35,7 @@ const SpecialOffer = () => {
                   initial={{ scale: 0 }}
                   animate={inView ? { scale: 1 } : {}}
                   transition={{ duration: 0.8, delay: 0.2 }}
-                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-luxury-gold to-luxury-blue text-luxury-black px-6 py-3 rounded-full font-bold text-lg mb-6"
+                  className="inline-flex items-center space-x-2 bg-gradient-to-r from-luxury-blue to-white text-luxury-black px-6 py-3 rounded-full font-bold text-lg mb-6"
                 >
                   <Gift className="w-6 h-6" />
                   <span>LIMITED TIME OFFER</span>

@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
       icon: Award,
       title: 'Premium Products',
       description: 'Only the finest detailing products and equipment',
-      color: 'text-luxury-gold',
+      color: 'text-white',
     },
     {
       icon: Clock,
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Why Choose <span className="text-gradient">Auto Dynamics</span>?
+            Why Choose <span className="text-gradient-blue">Auto Dynamics</span>?
           </h2>
           <p className="text-xl text-luxury-silver max-w-3xl mx-auto">
             We don't just clean your car – we restore it to showroom condition with 
@@ -81,12 +81,12 @@ const WhyChooseUs = () => {
               <motion.div
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
-                className={`w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-luxury-gold/20 to-luxury-blue/20 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-luxury-gold/20 transition-all duration-300`}
+                className={`w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-white/20 to-luxury-blue/20 flex items-center justify-center group-hover:shadow-lg group-hover:shadow-white/20 transition-all duration-300`}
               >
                 <feature.icon className={`w-8 h-8 ${feature.color}`} />
               </motion.div>
               
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-luxury-gold transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-white transition-colors duration-300">
                 {feature.title}
               </h3>
               
@@ -106,19 +106,19 @@ const WhyChooseUs = () => {
         >
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-4xl lg:text-5xl font-bold text-luxury-gold mb-2">500+</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">500+</div>
               <div className="text-luxury-silver">Cars Detailed</div>
             </div>
             <div>
-              <div className="text-4xl lg:text-5xl font-bold text-luxury-gold mb-2">10+</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">10+</div>
               <div className="text-luxury-silver">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl lg:text-5xl font-bold text-luxury-gold mb-2">100%</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">100%</div>
               <div className="text-luxury-silver">Satisfaction Rate</div>
             </div>
             <div>
-              <div className="text-4xl lg:text-5xl font-bold text-luxury-gold mb-2">24/7</div>
+              <div className="text-4xl lg:text-5xl font-bold text-white mb-2">24/7</div>
               <div className="text-luxury-silver">Customer Support</div>
             </div>
           </div>

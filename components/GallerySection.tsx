@@ -154,7 +154,7 @@ const GallerySection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Our <span className="text-gradient">Work Speaks</span> for Itself
+            Our <span className="text-gradient-blue">Work Speaks</span> for Itself
           </h2>
           <p className="text-xl text-luxury-silver max-w-3xl mx-auto">
             See the stunning transformations we've achieved for our clients. 

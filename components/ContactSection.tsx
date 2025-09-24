@@ -52,7 +52,7 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Get In <span className="text-gradient">Touch</span>
+            Get In <span className="text-gradient-blue">Touch</span>
           </h2>
           <p className="text-xl text-luxury-silver max-w-3xl mx-auto">
             Ready to transform your car? Contact us today for a free consultation 

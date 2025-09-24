@@ -53,12 +53,12 @@ a {
 
 /* Luxury button styles */
 .btn-luxury {
-  @apply bg-gradient-to-r from-luxury-gold to-luxury-blue text-luxury-black font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
+  @apply bg-gradient-to-r from-luxury-blue to-white text-luxury-black font-semibold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300;
 }
 
 .btn-luxury:hover {
   @apply shadow-2xl;
-  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 30px rgba(0, 102, 204, 0.4);
 }
 
 /* Glass morphism effect */
@@ -80,6 +80,14 @@ a {
 /* Text gradient */
 .text-gradient {
   background: linear-gradient(135deg, #d4af37, #0066cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Blue to white gradient */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0066cc, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

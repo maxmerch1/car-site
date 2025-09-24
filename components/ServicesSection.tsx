@@ -64,7 +64,7 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Our <span className="text-gradient">Premium Services</span>
+            Our <span className="text-gradient-blue">Premium Services</span>
           </h2>
           <p className="text-xl text-luxury-silver max-w-3xl mx-auto">
             Professional detailing services designed to protect your investment 

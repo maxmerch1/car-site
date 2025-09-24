@@ -4,22 +4,38 @@ import { motion } from 'framer-motion'
 import { ChevronDown, Star, Shield, Award } from 'lucide-react'
 
 const HeroSection = () => {
+  const heroImages = [
+    '/carpics/IMG_3191.jpeg',
+    '/carpics/IMG_6018.jpeg'
+  ]
+
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Single Background Image */}
+      {/* Side by Side Background Images */}
       <div className="absolute inset-0 z-0">
-        <motion.div
-          className="w-full h-full bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/carpics/hero-bg.png')" }}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: 'easeOut' }}
-        />
+        <div className="flex h-full w-full">
+          {/* Left Image */}
+          <motion.div
+            className="w-1/2 h-full bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url('${heroImages[0]}')` }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.2 }}
+          />
+          {/* Right Image */}
+          <motion.div
+            className="w-1/2 h-full bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url('${heroImages[1]}')` }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2, ease: 'easeOut', delay: 0.4 }}
+          />
+        </div>
         
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-luxury-black/70" />
-        <div className="absolute inset-0 bg-gradient-to-br from-luxury-black/60 via-luxury-black/40 to-luxury-black/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/80 via-transparent to-luxury-black/30" />
+        <div className="absolute inset-0 bg-luxury-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-luxury-black/30 via-luxury-black/20 to-luxury-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-luxury-black/50 via-transparent to-luxury-black/20" />
       </div>
 
       {/* Content */}
@@ -39,7 +55,7 @@ const HeroSection = () => {
           >
             <span className="text-white">Luxury Detailing,</span>
             <br />
-            <span className="text-gradient">Flawless Finish.</span>
+            <span className="text-gradient-blue">Flawless Finish.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -51,7 +67,7 @@ const HeroSection = () => {
           >
             Protect your investment and fall in love with your car again.
             <br />
-            <span className="text-luxury-gold font-semibold">
+            <span className="text-white font-semibold">
               Professional expertise that transforms your vehicle into a pristine masterpiece.
             </span>
           </motion.p>
@@ -64,15 +80,15 @@ const HeroSection = () => {
             className="flex flex-wrap justify-center items-center gap-8 text-luxury-silver"
           >
             <div className="flex items-center space-x-2">
-              <Star className="w-5 h-5 text-luxury-gold fill-current" />
+              <Star className="w-5 h-5 text-white fill-current" />
               <span className="font-semibold">500+ Cars Detailed</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Shield className="w-5 h-5 text-luxury-gold" />
+              <Shield className="w-5 h-5 text-white" />
               <span className="font-semibold">10 Years Experience</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Award className="w-5 h-5 text-luxury-gold" />
+              <Award className="w-5 h-5 text-white" />
               <span className="font-semibold">100% Satisfaction</span>
             </div>
           </motion.div>
@@ -95,7 +111,7 @@ const HeroSection = () => {
               href="tel:+18603996601"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center space-x-2 text-luxury-silver hover:text-luxury-gold transition-colors duration-300 text-lg font-semibold"
+              className="flex items-center space-x-2 text-luxury-silver hover:text-white transition-colors duration-300 text-lg font-semibold"
             >
               <span>Call (860) 399-6601</span>
             </motion.a>
@@ -106,7 +122,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="inline-block bg-gradient-to-r from-luxury-gold to-luxury-blue text-luxury-black px-6 py-3 rounded-full font-bold text-lg shadow-lg"
+            className="inline-block bg-gradient-to-r from-luxury-blue to-white text-luxury-black px-6 py-3 rounded-full font-bold text-lg shadow-lg"
           >
             🎉 $20 OFF Your First Detail - Limited Time!
           </motion.div>

@@ -43,7 +43,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 bg-gradient-to-r from-luxury-gold to-luxury-blue rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-r from-luxury-blue to-white rounded-lg flex items-center justify-center">
               <span className="text-luxury-black font-bold text-xl">AD</span>
             </div>
             <div>
@@ -66,7 +66,7 @@ const Navigation = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -2 }}
-                className="text-luxury-silver hover:text-luxury-gold transition-colors duration-300 font-medium"
+                className="text-luxury-silver hover:text-white transition-colors duration-300 font-medium"
               >
                 {item.name}
               </motion.a>
@@ -79,7 +79,7 @@ const Navigation = () => {
               href="tel:+18603996601"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center space-x-2 text-luxury-silver hover:text-luxury-gold transition-colors duration-300"
+              className="flex items-center space-x-2 text-luxury-silver hover:text-white transition-colors duration-300"
             >
               <Phone className="w-4 h-4" />
               <span className="text-sm">(860) 399-6601</span>
@@ -96,7 +96,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden text-luxury-silver hover:text-luxury-gold transition-colors duration-300"
+            className="lg:hidden text-luxury-silver hover:text-white transition-colors duration-300"
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -121,7 +121,7 @@ const Navigation = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block px-4 py-2 text-luxury-silver hover:text-luxury-gold transition-colors duration-300"
+                className="block px-4 py-2 text-luxury-silver hover:text-white transition-colors duration-300"
               >
                 {item.name}
               </motion.a>
@@ -130,7 +130,7 @@ const Navigation = () => {
               <motion.a
                 href="tel:+18603996601"
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center space-x-2 text-luxury-silver hover:text-luxury-gold transition-colors duration-300 mb-3"
+                className="flex items-center space-x-2 text-luxury-silver hover:text-white transition-colors duration-300 mb-3"
               >
                 <Phone className="w-4 h-4" />
                 <span>(860) 399-6601</span>
